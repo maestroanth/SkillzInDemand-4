@@ -1,0 +1,7 @@
+CourseTro Lesson 5 Event Binding
+
+Capture user-initiated events from the view and calling component logic. Events go in paranthesis in View (click). So don't use onclick = "" or you're not using Angular.
+
+Opposite from property binding which calls the other way around.
+
+All events are at a MDN webpage https://developer.mozilla.org/en-US/docs/Web/Events
