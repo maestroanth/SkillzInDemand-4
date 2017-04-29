@@ -1,1 +1,33 @@
 Angular 2 MVA Lesson 2
+
+TypeScript - Features
+	Strongly typed (JS is loosely typed)
+	Modules and classes (similar to namespaces)
+	Template strings
+	Interfaces
+	Generics
+	*Is a superset of JavaScript*
+
+TypeScript - Type Annotations
+
+JavaScript               TypeScript
+var num = 5;             var num: number = 5
+var name = "Speros";     var name: string = "Speros"
+var something = 123;     var something: any = 123
+var list = [1,2,3];      var list: Array<number> = [1,2,3]
+
+function square(num) {   function square(num: number): number {  //number is coming in and number is coming out
+	return num * num;		  return num* num;
+}					      }
+
+TypeScript - Classes
+(JS classes is "syntatical sugar")
+	JavaScript                          TypeScript
+var Person = (function()             class Person {
+   function Person(name){                constructor(public name: string){
+      this.name = name;                   
+   }                                     }
+   return Person;                     }
+ }());                    
+
+var aPerson = new Person("Ada");     var aPerson = new Person("Ada Lovelace");//no difference in instantiating
