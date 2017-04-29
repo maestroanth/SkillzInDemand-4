@@ -1,0 +1,10 @@
+CourseTro Lesson 2 Components
+
+Class -> Component Decorator (used with @ sign) -> Component
+
+ng g component <name>  //generates new component
+
+adds new folder with all boilerplate files
+//4 files .css .html. .ts .spec.ts(which is used for unit testing)
+
+and in app.module.ts it imports it as a new line and adds it in @NgModule declarations:

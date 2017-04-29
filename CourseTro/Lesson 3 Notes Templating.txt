@@ -1,0 +1,9 @@
+CourseTro Lesson 3: Templating Basics
+
+Inline and External Templating - Using template: (for little HTML) vs. templateUrl: (for lots of HTML)
+
+Interpolation - Define data within a component {{title}}
+
+ngFor (why *ngFor)
+
+ngIf, Else & Then

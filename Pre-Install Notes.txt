@@ -3,3 +3,6 @@ The git clone quickstart was far easier than the Angular-CLI install
 The Angular-CLI couldn't parse the package.JSON file because of some funny unexpected 'string' error, and I could not find anything wrong with that file through an IDE or anything!
 However, I just deleted that whole file text which circumvented that error (however it didn't create the project in the right directory, so I had to copy and paste it into the skillz folder)
 and it seemed to work after that!
+
+Originally, I was going to try and do an MVA Angular 2 tutorial before going up to Angular 4; however, it seemed why to tedious (moreso than doing an AngularJS folder with just AngularJS)
+to do it this way because the Angular Developers didn't separate this out.
