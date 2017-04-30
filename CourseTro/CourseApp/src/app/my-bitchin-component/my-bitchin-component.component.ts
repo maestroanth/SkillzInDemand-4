@@ -22,8 +22,14 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
   </ul>
 
     <div> 
-        <button (click)="tittyToggle = !tittyToggle" style="margin-left: 40px;">Show Me Her TITTIES!!!!</button>
+        <button (click)="tittyToggle = !tittyToggle" style="margin-left: 40px;"><div *ngIf="tittyToggle then temp1 else temp2">   </div> </button>
     </div>
+    
+    <!-- #binds the temp1-->
+    <ng-template #temp1>Hide her titties cuz I'm gay.</ng-template>
+    <!-- #binds the temp2-->
+    <ng-template #temp2>Show Me Her TITTIES!!!!</ng-template>
+
 
     <div *ngIf="tittyToggle"> 
         <div *ngIf="!TittyMessage"><h4>click image to make these titties bigger!</h4>
@@ -41,11 +47,10 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
   </ul>
 </div>
 -->
-<!-- #binds the temp1-->
-<ng-template #temp1></ng-template>
 
-<!-- #binds the temp2-->
-<ng-template #temp2></ng-template>
+
+
+
  
  
   `,
