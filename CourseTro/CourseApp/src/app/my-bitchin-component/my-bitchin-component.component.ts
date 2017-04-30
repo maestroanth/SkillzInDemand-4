@@ -6,12 +6,10 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
   
 <div>
 
-  <button (click)="tittyToggle = !tittyToggle">Show Me Da TITTIES!!!!</button>
+  
   <br />
   
   <br />
-  <div *ngIf="tittyToggle">  
-  <h4> click image to make these titties bigger!</h4><br><img [@myAwesomeAnimation] = 'state' (click)='animateMe()' style="margin-left: 110px; margin-top: 10px; margin-bottom: 100px; width: 500px;" src = "{{ tittyPic }}"></div>
 
   <h2> Here is my Hoe List </h2>
 
@@ -20,7 +18,20 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
     <li> Da Titty Size (or Primary ID): {{ myObject.tittySize }}</li>
     <li> Age: {{ myObject.age }}</li>
     <li> Where I Picked Them Up: {{ myObject.location }}</li>
+
   </ul>
+
+    <div> 
+        <button (click)="tittyToggle = !tittyToggle" style="margin-left: 40px;">Show Me Her TITTIES!!!!</button>
+    </div>
+
+    <div *ngIf="tittyToggle"> 
+        <div *ngIf="!TittyMessage"><h4>click image to make these titties bigger!</h4>
+        </div>
+      <br><img [@myAwesomeAnimation] = 'state' (click)="animateMe(); TittyMessage = !TittyMessage"
+      style="margin-left: 110px; margin-top: 50px; margin-bottom: 100px; width: 500px;" src = "{{ tittyPic }}"><br>
+    </div>
+
 </div>
 <!--
 <div>
@@ -34,7 +45,7 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 <ng-template #temp1></ng-template>
 
 <!-- #binds the temp2-->
-<ng-template #temp2>No, I don't exist. So how can I possibly be here to inform you of that fact?! (Pimpin' paradox yo!)</ng-template>
+<ng-template #temp2></ng-template>
  
  
   `,
@@ -44,9 +55,11 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 
           state('small', style({
               transform: 'scale(1)',
+              margin: '100px',
           })),
           state('large', style({
               transform: 'scale(1.5)',
+              margin: '100px',
           })),
 
           transition('xxx-small <=> xxx-large', animate('300ms ease-in', /*keyframes([
