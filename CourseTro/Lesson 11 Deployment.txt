@@ -1,0 +1,27 @@
+CourseTro Lesson 11 Deployment
+
+AOT = Ahead of Time Compilation
+
+ng build
+
+creates a folder names dist (has some big files)
+
+ng build --prod (getting some erros with this)
+
+then ftp eventhing in dist folder up to a server
+
+if root doesn't match (which it will most likely not do this)
+
+ng build --prod --base-href /whatever/
+
+if you want to publish project onto github:
+
+ng build --base-href https://maestroanth.github.io/<repository-name>/
+
+and then
+
+ngh
+
+if it says successfully published, then it should be live at URL!
+
+(I'm not going to publish this app because of the "adult material" ;P )

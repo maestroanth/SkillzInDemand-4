@@ -1,0 +1,12 @@
+CourseTro Lesson 10 Animations 
+
+Create powerful animations based on the Web Animations API
+
+You must import animations (unlike in Angular 2)
+
+npm install @angular/animations@latest --save
+
+then in app.module.ts add: import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+and add BrowserAnimationsModule to list of imports 
+
+then add functions you'd like i.e. import { trigger, state, style, transition, animate, keyframes } from '@angular/animations'; to your component

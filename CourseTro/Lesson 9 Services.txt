@@ -1,1 +1,10 @@
 CourseTro Lesson 9 Services
+
+Reusable code that can be accessed from multiple components. (or share data)
+
+ng g service data
+
+1. Creates data.service.ts (and spec.ts remember which is for testing purposes)
+2. Import DataService into app.module.ts
+3. Add DataService into list of providers in app.module.ts
+4. Import Service after writing it in data.service into your component
